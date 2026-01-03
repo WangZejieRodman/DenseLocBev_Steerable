@@ -1,0 +1,14 @@
+[MODEL]
+model=DenseBEV
+feature_size=256
+output_dim=256
+pooling=GeM
+normalize_embeddings=True
+
+# Dense BEV configuration
+coordinates=bev
+coords_range=-10., -10, -4, 10, 10, 8
+div_n=256, 256, 32
+in_channels=32
+
+# Note: This version uses standard 2D convolutions (not sparse)
